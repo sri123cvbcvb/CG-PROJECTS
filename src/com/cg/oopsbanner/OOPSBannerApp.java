@@ -1,19 +1,23 @@
 package com.cg.oopsbanner;
 
 /**
- * UC2: Render OOPS as Banner using spaces and double asterisks (**)
- */
-/**
- * OOPSBannerApp UC2 - Render OOPS as Banner (spaces and *)
- * This class displays OOPS in a visual format and provides metadata analysis.
- * * @author Developer
- * @version 2.0
+ * UC3: Refactor Banner Logic into Functions
+ *
+ * Output remains exactly the same as UC2.
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
+        printBanner(getBanner());
+    }
 
-        String[] banner = {
+    /**
+     * Builds and returns the OOPS banner.
+     *
+
+     */
+    private static String[] getBanner() {
+        return new String[]{
                 "    ***       ***       *******       ****** ",
                 "   ** **     ** **      **    **     **      ",
                 "   ** **     ** **      **     **   **      ",
@@ -22,10 +26,16 @@ public class OOPSBannerApp {
                 "   ** **     ** **      **                   **",
                 "   ** **     ** **      **                  **",
                 "    ***       ***       **             ******"
-
         };
+    }
 
-        for (String line : banner) {
+    /**
+     * Prints the banner to the console.
+     *
+
+     */
+    private static void printBanner(String[] bannerLines) {
+        for (String line : bannerLines) {
             System.out.println(line);
         }
     }
