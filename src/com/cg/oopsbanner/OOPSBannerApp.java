@@ -1,16 +1,32 @@
 package com.cg.oopsbanner;
 
 /**
- * OOPSBannerApp
- *
- * UC1: Print OOPS to Console
- *
- * This program prints the literal text "OOPS"
- * to the console.
+ * UC2: Render OOPS as Banner using spaces and double asterisks (**)
+ */
+/**
+ * OOPSBannerApp UC2 - Render OOPS as Banner (spaces and *)
+ * This class displays OOPS in a visual format and provides metadata analysis.
+ * * @author Developer
+ * @version 2.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
-        System.out.println("OOPS");
+
+        String[] banner = {
+                "    ***       ***       *******       ****** ",
+                "   ** **     ** **      **    **     **      ",
+                "   ** **     ** **      **     **   **      ",
+                "   ** **     ** **      **    **      *****  ",
+                "   ** **     ** **      *******             **",
+                "   ** **     ** **      **                   **",
+                "   ** **     ** **      **                  **",
+                "    ***       ***       **             ******"
+
+        };
+
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
